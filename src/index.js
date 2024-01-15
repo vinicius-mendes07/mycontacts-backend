@@ -1,7 +1,7 @@
+require('express-async-errors');
 const express = require('express');
 const cors = require('./app/middlewares/cors');
 const errorHandler = require('./app/middlewares/errorHandler');
-require('express-async-errors');
 
 const routes = require('./routes');
 
@@ -14,4 +14,4 @@ app.use(routes);
 
 app.use(errorHandler);
 
-app.listen(3001, () => console.log('Server started at http://localhost:3001'));
+app.listen(3001, () => console.log('Server started'));
